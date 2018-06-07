@@ -21,3 +21,5 @@ const CourseList = ({courses}) => {
     </table>
     );
 }
+
+export default CourseList;
