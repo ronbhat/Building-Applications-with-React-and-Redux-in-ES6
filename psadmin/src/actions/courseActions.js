@@ -1,7 +1,7 @@
 import * as type from './actionTypes';
 import courseApi from '../api/mockCourseApi';
 
-export function loadCoursesSuccess(courses) {
+function loadCoursesSuccess(courses) {
     return { type: type.LOAD_COURSES_SUCCESS, courses};
 }
 

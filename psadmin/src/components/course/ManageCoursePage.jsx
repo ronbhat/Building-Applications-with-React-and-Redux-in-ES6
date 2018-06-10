@@ -18,8 +18,8 @@ class ManageCoursePage extends React.Component {
 
     updateCourseState(event) {
         const feild = event.target.name;
-        let course = this.state.course;
-        course[feild] = event.taget.value;
+        let course = Object.assign({}, this.state.course);
+        course[feild] = event.target.value;
         return this.setState({course: course});
     }
 
